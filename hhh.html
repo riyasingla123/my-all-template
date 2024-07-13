@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .button{background-color:burlywood;border: none;padding:10px}
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap :10px;
+          }
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+        @media only screen and (max-width: 425px) {
+        body {
+          background-color: lightblue;
+        }  .parent{grid-template-columns: 1fr ;}
+      }
+      @media only screen and (max-width: 768px) and (min-width: 425px)  {
+        body {
+          background-color: rgb(36, 233, 141);
+        }  .parent{grid-template-columns: 1fr 1fr;}
+      }
+      @media only screen and  (max-width: 1440px) and (min-width: 768px)  {
+        body {
+          background-color: rgb(26, 115, 145);
+        }  .parent{grid-template-columns: 1fr 1fr 1fr;}
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div style="padding:15px; text-align: center;">
+        <h1 style="font-weight: 100;">Hello, I am Anna Klinsman. A Wedding & Lifestyle Photographer.</h1>
+        <p>Hello, I am Anna, a lifestyle photographer based in Rome, Italy. My passion is to document the fleeting moments of love to create timeless, beautiful images as memories. I love capturing weddings, elopements and also families. My style is minimal, natural and understated. Looking forward to capturing your special day for eternity!</p>
+        <button class="button">SAY HELLO</button>
+    </div>
+    <div class="parent" >
+        <div>
+       <img src="image/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg" alt="" width="100%" >
+       <h2>ABOUT ANNA</h2>
+       <P>I try and translate the beauty of love through my work as a wedding photographer. Let's work together to create eternal memories of your special day.</P>
+       <button class="button">meet me</button>
+    </div>
+    <div>
+        <img src="image/beautiful-view-greenery-bridge-forest-perfect-background.jpg" alt=""  width="100%">
+        <h2>LATEST WORK</h2>
+        <P>Whether its a wedding or an elopement, or just capturing two humans in love - I have done it all. My visual style is chic and understated, full of life and emotions.</P>
+        <button class="button">see work</button>
+    </div>
+    <div>
+        <img src="image/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg" alt="" width="100%">
+        <h1>Pricing & Packages</h1>
+        <P>Every shoot is unique and different. However, I have put together a pricing page that would give you an idea on how much to budget for the photoshoot of your special day.</P>
+        <button class="button">see pricing</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
