@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    .spn{background-color:black ;
+    color: white;
+    padding: 5px;
+    }
+    .parent{display:grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap:30px;
+    }
+    .shadow{
+        box-shadow: 0 19px 38px rgba(5, 5, 5, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    .container{
+            width: 95%;
+            margin:auto;}
+            .button
+    {border:none;
+    background-color: black;color: white;padding:8px;margin-bottom: 5px;}
+    .butn{border: none;
+        background-color:lightgrey;color:black; padding: 5px; margin-bottom: 5px;}
+    h1{font-weight: 100;}
+    @media only screen and (max-width: 425px) {
+        body {
+          background-color: lightblue;
+        }  .parent{grid-template-columns: 2fr ;}
+      }
+      @media only screen and (max-width: 768px) and (min-width: 425px)  {
+        body {
+          background-color: rgb(36, 233, 141);
+        }  .parent{grid-template-columns: 1fr 1fr;}
+      }
+      @media only screen and  (max-width: 1440px) and (min-width: 768px)  {
+        body {
+          background-color: white;
+        }  .parent{grid-template-columns: 1fr 1fr ;}
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+<div>
+    <h1 style="text-align: center;">MY BLOG</h1>
+    <p style="text-align: center;">Welcome to the blog of <span class="spn">unknown</span></p>
+</div>
+<DIV class="parent">
+<div class="left">
+    <div class="shadow" data-aos="fade-right">
+    <img src="image/woods.jpg" alt=""width="100%">
+  <div style="padding: 10px;">
+    <h1>TITLE HEADING</h1>
+    <h2>Title description,April 7, 2014</h2>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <P><button style="background-color: white;color: black;padding: 5px;"> READ MORE</button><span style="float: right;">Comment <span style="background-color: black;color: white;padding: 5px;">0</span></span></P>
+  </div>
+</div><br>
+<div class="shadow" data-aos="fade-right">
+   <img src="image/bridge.jpg" alt=""width="100%">
+   <div style="padding: 10px;">
+   <h1>BLOG ENTRY</h1>
+   <H2>Title description, April 2, 2014</H2>
+   <P>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</P>
+   <P><button style="background-color: white;color: black;padding: 5px;"> READ MORE</button>
+   <span style="float: right;"> Comment <span style="background-color: black;color: white;padding: 5px;">2</span></span></P>
+   </div>
+</div>
+</div>
+<div class="right">
+<div class="shadow" >
+    <img src="image/avatar_g.jpg" alt=""width="100%">
+<div style="padding: 10px;">
+    <h1>MY NAME</h1>
+    <P>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</P>
+</div>  
+</div><br>
+<div class="shadow" style="padding: 10px;" data-aos="fade-left">
+    <h1>POPULAR POSTS</h1>
+    <table style="width: 100%;">
+        <tr>
+       <td style="width:50px"><img src="image/workshop.jpg" alt="" width="50px"></td>
+       <td><span style="font-size: 25px;">
+           Lorem</span>
+           <br>
+         Sed mattis nunc</td>
+       </tr>
+       <TR><td colspan="2"><hr></td></TR>
+       <tr>
+        <td style="width:50px"><img src="image/gondol.jpg" alt="" width="50px"></td>
+        <td><span style="font-size: 25px;">
+            Ipsum</span>
+            <br>
+            Praes tinci sed</td>
+        </tr>
+        <TR><td colspan="2"><hr></td></TR>
+        <tr>
+            <td style="width:50px"><img src="image/skies.jpg" alt="" width="50px"></td>
+            <td><span style="font-size: 25px;">
+                Dorum</span>
+                <br>
+                Ultricies congue</td>
+            </tr>
+            <TR><td colspan="2"><hr></td></TR>
+            <tr>
+                <td style="width:50px"><img src="image/rock.jpg" alt="" width="50px"></td>
+                <td><span style="font-size: 25px;">
+                    Mingsum</span>
+                    <br>
+                    Lorem ipsum dipsum</td>
+                </tr>
+                <TR><td colspan="2"><hr></td></TR>
+                </table>
+</div><br>
+<div class="shadow" style="padding: 10px;" data-aos="fade-left">
+    <h2 class="font"> TAGS</h2>
+    <button class="button">travel</button>
+    <button class="butn">newyork</button>
+    <button class="butn">london</button> 
+    <button class="butn">IKEA</button>
+    <button class="butn">NORWAY</button>
+    <button class="butn">DIY</button>
+    <button class="butn">ideas</button>
+    <button class="butn">baby</button>
+    <button class="butn">family</button>
+    <button class="butn">news</button>
+    <button class="butn">clothing</button>
+    <button class="butn">shooping</button>
+    <button class="butn">sports</button>
+    <button class="butn">games</button>
+</div> 
+</div>
+</div>
+</div><br>
+<div style="background-color:rgb(102, 100, 100); padding:60px;" data-aos="fade-up">
+    <button style="padding: 10px;">Previous</button>
+    <button style="padding: 10px;background-color: black;color: white;">Next</button>
+    <p>Powered by w3.css</p>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
