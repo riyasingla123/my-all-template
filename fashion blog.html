@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/58e94a2a68.js" crossorigin="anonymous"></script>
+    <style>
+        .parent{display:grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap:30px;
+    }
+    .button
+    {border:none;
+    background-color: black;color: white;padding:8px;margin-bottom: 5px;}
+    .butn{border: none;
+        background-color:lightgrey;color:black; padding: 5px; margin-bottom: 5px;}
+    .shadow{  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+    .parent1{display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap:15px;}
+    .overall{padding: 10px;}
+    .container{
+            width: 95%;
+            margin:auto;}
+    .bannerimage{
+        position: relative;
+    }
+    .bannercontent{
+        position: absolute;
+        bottom: 300px;
+        left:50px
+    }
+    @media only screen and (max-width: 425px) {
+        body {
+          background-color: lightblue;
+        }  .parent{grid-template-columns: 1fr ;}
+      }
+      @media only screen and (max-width: 768px) and (min-width: 425px)  {
+        body {
+          background-color: rgb(36, 233, 141);
+        }  .parent{grid-template-columns: 1fr 1fr;}
+      }
+      @media only screen and  (max-width: 1440px) and (min-width: 768px)  {
+        body {
+          background-color: rgb(255, 255, 255);
+        }  .parent{grid-template-columns: 2fr 1fr ;}
+      }
+      body{margin: 0;
+        padding: 0;}
+        .navparent{
+            background-color: black;
+            color: white;
+            display:flex;
+            justify-content: space-between;
+            padding: 1px 0px 1px 0px;
+            /* position: fixed; */
+            top: 0;
+            z-index: 99;
+            left: 0;
+            right: 0;
+           
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0px 20px 0px 20px;
+            font-family: "poppins",sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+        }
+        li{padding: 10px;}
+        li:hover{background-color: lightgrey;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navparent">
+            <div class="logo">
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-snapchat"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-linkedin-in"></i></span></li>
+                </ul>
+            </div>
+            <div class="rightmenu">
+                <ul>
+                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+<div>
+    <h1 style="font-size: 48px;text-align: center;"><b>JANE BLOGLIFE</b></h1>
+    <h2 style="text-align: center;">Welcome to the blog of <span style="background-color: black;color: white;padding: 5px;">Jane's world</span></h2>
+</div>
+<div class="bannerimage">
+    <img src="image/jane.jpg" alt=""width="100%">
+<div class="bannercontent">
+    <span style="color: white;font-size: 50px;">Jane's</span><br>
+    <span style="color: white;font-size: 80px;"><b>Fashion Blog</b></span><br>
+<button style="padding: 15px;font-size: 17px;background-color: lightgrey ;border: 0;"><b>Subscribe</b></button>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="parent">
+<div class="left">
+
+<div class="shadow" style="padding: 20px;"  data-aos="fade-right">
+    <h2 style="text-align: center;">TITLE HEADING</h2>
+    <h3 style="text-align: center;">Title description,<span style="color: grey;">May 2, 2016</span></h3>
+<div>
+    <img src="image/girl_hat.jpg" alt="" width="100%">
+    <p><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+
+     Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <button style="padding:10px;background-color: white;color: black;"><img src="image/like.png" alt="" width="10px" >like</button><span style="float:right;background-color:  black;color: white;padding: 5px;">Replies <span style="background-color:white;color: black;padding: 2px;">1</span></span>
+</div>
+</div><br>
+<div class="shadow" style="padding: 20px;" data-aos="fade-right">
+<div>
+    <h2 style="text-align: center;">TITLE HEADING</h2>
+    <h3 style="text-align: center;">Title description,<span style="color: grey;"> April 23, 2016</span></h3>
+</div>
+<div>
+    <img src="image/man_hat.jpg" alt="" width="100%">
+    <p><b>Hats! </b>The trend this summer is hats for men!
+
+        Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+        
+    </p>
+    <button style="padding: 10px;background-color: white;color: black;"><img src="image/like.png" alt=""width="10px">like</button><span style="float:right;background-color:  black;color: white;padding: 5px;">Replies <span style="background-color:white;color: black;padding: 2px;">2</span></span>
+</div>
+</div><br>
+<div class="shadow" style="padding: 20px;" data-aos="fade-right" >
+<div>
+    <h2 style="text-align: center;">TITLE HEADING</h2>
+    <h3 style="text-align: center;">Title description,<span style="color: grey;">  April 7, 2016</span></h3>
+</div>
+<div>
+    <img src="image/runway.jpg" alt="" width="100%">
+    <p><b>Dont miss!</b> The runway in New York City this weekend is gonna be legendary!
+
+        Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+         </p>
+    <button style="padding: 10px;background-color: white;color: black;"><img src="image/like.png" alt=""width="10px">like</button><span style="float:right;background-color:  black;color: white;padding: 5px;">Replies <span style="background-color:white;color: black;padding: 2px;">3</span></span>
+</div>
+</div>
+
+</div>
+<div class="right">
+    <div class="shadow" style="background-color: black;"  data-aos="fade-left">
+    <img src="image/avatar_girl2.jpg" alt=""width="100%">
+<div style="padding: 10px;background-color: black;color: white;">
+    <span>MY NAME</span>
+    <P>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</P>
+</div>
+</div><br>
+<div class="shadow"  data-aos="fade-left">
+<h1 style="background-color: black;color: white; padding: 15px;">POPULAR POSTS</h1>
+    <table style="width: 100%;padding:5px;">
+        <tr>
+       <td style="width:50px"><img src="image/avatar_smoke.jpg" alt="" width="50px"></td>
+       <td><span style="font-size: 25px;">
+        Denim</span>
+           <br>
+         Sed mattis nunc</td>
+       </tr>
+       <TR><td colspan="2"><hr></td></TR>
+       <tr>
+        <td style="width:50px"><img src="image/bandmember.jpg" alt="" width="50px"></td>
+        <td><span style="font-size: 25px;">
+            Sweaters</span>
+            <br>
+            Praes tinci sed</td>
+        </tr>
+        <TR><td colspan="2"><hr></td></TR>
+        <tr>
+            <td style="width:50px"><img src="image/workshop.jpg" alt="" width="50px"></td>
+            <td><span style="font-size: 25px;">
+                Workshop</span>
+                <br>
+                Ultricies congue</td>
+            </tr>
+            <TR><td colspan="2"><hr></td></TR>
+            <tr>
+                <td style="width:50px"><img src="image/avatar_smoke (1).jpg" alt="" width="50px"></td>
+                <td><span style="font-size: 25px;">
+                    Trends</span>
+                    <br>
+                    Lorem ipsum dipsum</td>
+                </tr>
+                <TR><td colspan="2"></td></TR>
+                </table>
+</div><br>
+<div class="shadow"  data-aos="fade-left">
+<div>
+    <h2 style="background-color: black;color:white;padding: 15px;font-size: 30px;">Tag</h2></div>
+    <div style="padding: 5px;">
+    <button class="button">travel</button>
+    <button class="butn">newyork</button>
+    <button class="butn">london</button> 
+    <button class="butn">hats</button>
+    <button class="butn">NORWAY</button>
+    <button class="butn">Sweaters</button>
+    <button class="butn">Ideas</button>
+    <button class="butn">Deals</button>
+    <button class="butn">accessories</button>
+    <button class="butn">news</button>
+    <button class="butn">clothing</button>
+    <button class="butn">shooping</button>
+    <button class="butn">jeans</button>
+    <button class="butn">trends</button>
+</div>
+</div>
+<div class="shadow"  data-aos="fade-left">
+    <div><h2 style="background-color: black;color:white;padding: 15px;font-size: 30px;">Inspiration</h2></div>
+    <div class="overall">
+        <div class="parent1">
+            <div class="parenting"><img src="image/jeans.jpg" alt="" width="100%"></div>
+            <div class="parenting"><img src="image/team1.jpg" alt="" width="100%"></div>
+        </div>
+        <div class="parent1">
+            <div class="parenting"><img src="image/avatar_hat.jpg" alt=""width="100%"></div>
+            <div class="parenting"><img src="image/team4.jpg" alt=""width="100%"></div>
+        </div>
+    </div>
+</div>
+<div class="shadow"  data-aos="fade-left">
+    <div><h2 style="background-color: black;color:white;padding: 15px;font-size: 30px;">Follow Me</h2></div>
+    <div style="padding:8px;">
+        <a href="https://www.facebook.com/"><img src="image/facebook.png" alt=""width="5%" ></a>
+        <a href="https://www.instagram.com"><img src="image/instagram.png" alt=""width="5%" ></a>
+        <a href="https://www.snapchat.com/"><img src="image/snapchat.png" alt=""width="5%" ></a>
+        <a href="https://in.pinterest.com/"><img src="image/pinterest.png" alt=""width="5%" ></a>
+        <a href="https://www.twitter.com/"><img src="image/twitter.png" alt=""width="5%" ></a>
+        <a href="https://www.linkedin.com/feed/"><img src="image/linkedin.png" alt=""width="5%" ></a>
+    </div>
+</div>
+<div class="shadow"  data-aos="fade-left">
+    <div><h2 style="background-color: black;color:white;padding: 15px;font-size: 30px;">Subscribe</h2></div>
+    <div style="padding: 10px;">
+        <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+        <p><input type="text" placeholder="Enter e-mail" style="width:100%;padding: 8px;"></p>
+        <button type="button" style=" padding:10px;width: 100%;border: none;background-color: #F44337;color: white;font-size: 15px;">Subscribe</button>
+    </div>
+</div>
+</div>
+</div>
+</div><br>
+<div style="background-color:rgb(102, 100, 100); padding:60px;"  data-aos="fade-up" >
+    <button style="padding: 15px;"><b>To The Top </b></button>
+    <p style="color: white;">Powered by <u>w3.css</u></p>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
